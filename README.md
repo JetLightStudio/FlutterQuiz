@@ -1,6 +1,6 @@
 # flutter_quiz
 
-A new Flutter project.
+Flutter quiz app
 
 ## Getting Started
 
