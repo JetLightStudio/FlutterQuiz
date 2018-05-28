@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quiz/UI/answer_button.dart';
+import 'package:flutter_quiz/UI/question_text.dart';
 
 
 class QuizPage extends StatefulWidget{
@@ -11,32 +13,9 @@ Widget build(BuildContext context) {
       children: <Widget>[
         new Column(
           children: <Widget>[
-           new Expanded(
-             child: new Material(
-              color: Colors.greenAccent,
-              child: new InkWell(
-                onTap: () => print("true"),
-                child: new Center(
-                  child: new Container(
-                    child: new Text("True"),
-                  ),
-                ),
-              ),
-            ),
-           ),
-             new Expanded(
-             child: new Material(
-              color: Colors.redAccent,
-              child: new InkWell(
-                onTap: () => print("false"),
-                child: new Center(
-                  child: new Container(
-                    child: new Text("False"),
-                  ),
-                ),
-              ),
-            ),
-           )
+           new AnswerButton(true,() => print("True")),
+           new QuestionText(),
+           new AnswerButton(false, () => print("False")),
           ],
         )
       ],
