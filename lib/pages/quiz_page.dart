@@ -14,7 +14,7 @@ Widget build(BuildContext context) {
         new Column(
           children: <Widget>[
            new AnswerButton(true,() => print("True")),
-           new QuestionText(),
+           new QuestionText("Pizza is nice",1),
            new AnswerButton(false, () => print("False")),
           ],
         )
