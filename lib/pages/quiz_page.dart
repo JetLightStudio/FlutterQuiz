@@ -19,7 +19,7 @@ Widget build(BuildContext context) {
            new AnswerButton(false, () => print("False")),
           ],
         ),
-        new CorrectWrongOverlay()
+        new CorrectWrongOverlay(false)
       ],
     );
   }
