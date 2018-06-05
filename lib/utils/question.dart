@@ -1,4 +1,4 @@
-class Question{
+class Question {
   final String question;
   final bool answer;
 
